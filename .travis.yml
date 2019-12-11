@@ -23,4 +23,4 @@ script:
   - php reports.php > build/reports/report-$(phpenv version-name).html
 
 after_success:
-  - tree build/reports
+  - cat build/reports
