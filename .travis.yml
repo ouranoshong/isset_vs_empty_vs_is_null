@@ -20,7 +20,7 @@ install:
   - mkdir -p build/reports
 
 script:
-  - php reports.php >> build/reports/report-$(phpenv version-name).html
+  - php reports.php > build/reports/report-$(phpenv version-name).html
 
 after_success:
-  - ls build/reports
+  - tree build/reports
